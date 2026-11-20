@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Race Locator | Miles After Five</title>
+  <meta name="description" content="Pick a state and find upcoming races near you.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="locator">
+  <div id="site-header"></div>
+
+  <main id="main">
+    <div class="container page-head">
+      <p class="eyebrow">Race Locator</p>
+      <h1>Find your next start line</h1>
+      <p class="lead">Pick your state to see the upcoming races near you. Set a goal, grab a friend, and sign up together, whatever your pace.</p>
+    </div>
+
+    <div class="container">
+      <div class="locator-controls">
+        <label for="state-select">Choose a state</label>
+        <select id="state-select" name="state">
+          <option value="">Select a state</option>
+          <!-- js/locator.js adds every state and DC here -->
+        </select>
+      </div>
+
+      <!-- Results appear here when a state is chosen -->
+      <div id="locator-results" aria-live="polite"></div>
+
+      <div class="callout">
+        <p>Want to see every race at once, in date order?</p>
+        <a class="btn" href="calendar.html">Open the Race Calendar</a>
+      </div>
+
+      <p class="note">Registration happens on each race's official website, never on this site. Sign-ups can change fast, so check the official page before you register.</p>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="js/main.js"></script>
+  <script src="data/races.js"></script>
+  <script src="js/locator.js"></script>
+</body>
+</html>

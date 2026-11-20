@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>New Gear Drops | Miles After Five</title>
+  <meta name="description" content="New running shoes from the Miles After Five weekly gear drops, with a side-by-side comparison.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="gear">
+  <div id="site-header"></div>
+
+  <main id="main">
+    <div class="container page-head">
+      <p class="eyebrow">New Gear Drops</p>
+      <h1>Fresh shoes for your next shoe hunt</h1>
+      <p class="lead">The running shoes from our weekly Instagram gear drops, with release facts, key features and prices. Save the one you like and send it to the friend you swap gear news with.</p>
+    </div>
+
+    <!-- Side-by-side comparison, built by js/gear.js from data/gear.js -->
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow">Side by side</p>
+        <h2>Compare the gear drop shoes</h2>
+        <p>Price and key features at a glance. Prices can change, so check the official page before you buy.</p>
+        <div class="compare-wrap" tabindex="0" role="region" aria-label="Shoe comparison table, scrolls sideways">
+          <table class="compare" id="compare-table"></table>
+        </div>
+        <p class="scroll-hint">Swipe the table sideways to see every shoe →</p>
+      </div>
+    </section>
+
+    <!-- Product cards, built by js/gear.js from data/gear.js -->
+    <section class="section section--tint">
+      <div class="container">
+        <p class="eyebrow">The drops</p>
+        <h2>Every shoe, up close</h2>
+        <div class="gear-grid" id="gear-grid" style="margin-top:28px"></div>
+      </div>
+    </section>
+
+    <div class="container" style="margin-top:28px">
+      <p class="note">We share release facts only, not reviews. Whatever's on your feet, your pace is your own.</p>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="js/main.js"></script>
+  <script src="data/gear.js"></script>
+  <script src="js/gear.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Race Calendar | Miles After Five</title>
+  <meta name="description" content="Every upcoming race Miles After Five has listed, in date order.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="calendar">
+  <div id="site-header"></div>
+
+  <main id="main">
+    <div class="container page-head">
+      <p class="eyebrow">Race Calendar</p>
+      <h1>Upcoming races</h1>
+      <p class="lead">Every race we've listed, earliest first. Pick one, send it to the group chat, and plan it together.</p>
+    </div>
+
+    <div class="container">
+      <div class="callout">
+        <p>Looking for races in one state? The Race Locator filters by state.</p>
+        <a class="btn" href="locator.html">Go to the Race Locator</a>
+      </div>
+
+      <!-- js/locator.js builds the calendar here from data/races.js -->
+      <div id="calendar"></div>
+
+      <p class="note">Races before today are hidden automatically. Registration happens on each race's official website, never on this site.</p>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="js/main.js"></script>
+  <script src="data/races.js"></script>
+  <script src="js/locator.js"></script>
+</body>
+</html>
